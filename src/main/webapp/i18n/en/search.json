@@ -1,0 +1,7 @@
+{
+    "search": {
+        "button": "Get Weather",
+        "placeholder": "Enter city...",
+        "desc": "Enter city name and press button to get current weather."
+    }
+}

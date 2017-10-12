@@ -1,0 +1,16 @@
+<form class="form" role="form" (ngSubmit)="search()">
+    <input type="text" class="form-control" name="city" id="city" placeholder="{{'search.placeholder' | translate}}"
+   [(ngModel)]="searchValue">
+   <br>
+   <button type="search" class="btn btn-primary" jhiTranslate="search.button">Search</button>
+</form>
+
+<div *ngIf='weather'>
+        
+    <p><h3 >{{ weather.location}}  {{ weather.weatherDate | date:'medium'}}</h3> <p>
+    
+    <p style="float: left;"><img src="http://{{weather.icon}}" alt="" width="64" height="64" />
+       
+    <p><h2 style="float: left;"> {{ weather.tempature }} C <br>  {{ weather.wind }} {{ weather.windfrom }} </h2> </p>
+      
+</div>
